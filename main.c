@@ -2,8 +2,7 @@
 // # include <stdio.h>
 // int	main(void)
 // {
-// 	printf("%d\n", ft_printf("merhaba"));
-// 	printf("%d\n", printf("merhaba"));
+//     ft_printf("%s" ,"Ero\n");
 // }
 
 // int main(void)

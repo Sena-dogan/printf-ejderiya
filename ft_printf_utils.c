@@ -6,7 +6,7 @@
 /*   By: zdogan <zdogan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 01:36:37 by zdogan            #+#    #+#             */
-/*   Updated: 2022/08/28 16:56:03 by zdogan           ###   ########.fr       */
+/*   Updated: 2022/08/30 00:31:52 by zdogan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,11 @@ int	ft_putchar(char c)
 int	ft_putstr(char *str)
 {
 	int	x;
-	int	i;
 
 	x = 0;
-	i = 0;
 	if (!str)
 		return (ft_putstr("(null)"));
-	while (str[i])
-	{
-		x += write(1, &str[i], 1);
-		i++;
-	}
+	x += write(1, str, ft_strlen(str));
 	return (x);
 }
 
